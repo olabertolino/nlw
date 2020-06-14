@@ -1,0 +1,59 @@
+# -----------------------------------------------------------------
+# .gitignore for WordPress
+# Trinity Web
+# -----------------------------------------------------------------
+
+#  - Global
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+*~
+TAGS
+tags
+.*.sw[a-z]
+.netrwhist
+*.un~
+Session.vim
+*.sublime-project
+*.sublime-workspace
+*.sublime-projectcompletions
+*.tmproj
+*.tmproject
+tmtags
+nbproject/
+.ftppass
+.sftp-config.json
+
+# Sass
+.sass-cache/
+
+# Node
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+# ignore all files that start with ~
+~*
