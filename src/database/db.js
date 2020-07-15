@@ -68,5 +68,3 @@ module.exports = db
 //     //     console.log("Registro deletado com sucesso")
 //     // })
 // })
-
-// assisti até 30 minutos da última aula
