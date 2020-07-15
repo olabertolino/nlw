@@ -16,7 +16,6 @@ db.serialize(() => {
         );
     `)
 
-
     const query = `
         INSERT INTO places (
             image,
@@ -28,7 +27,27 @@ db.serialize(() => {
             items
         ) VALUES (?,?,?,?,?,?,?);
     `
-    db.run(query, [])
+
+    const values = [
+        "http://via.placeholder.com/960x540",
+        "Colectoria",
+        "Guilherme Gembalia, Jardim América",
+        "Nº 260",
+        "Santa Catarina",
+        "Rio do Sul",
+        "Resíduos Eletrônicos, Lâmpadas"
+    ]
+
+    function afterInsertData(err) {
+        if (err) {
+            return console.log(err)
+        }
+
+        console.log("Cadastrado com sucesso")
+        console.log(this)
+    }
+
+    db.run(query, values, afterInsertData)
 })
 
 // assisti até 30 minutos da última aula
